@@ -4,13 +4,13 @@
     let steps = [
         {name: "Project 1", icon: "fa-solid fa-cart-shopping", href: "#"},
         {name: "Project 2", icon: "fa-solid fa-list-check", href: "#"},
-        {name: "Plumbing company website", icon: "fa-solid fa-diagram-project", href: "https://github.com/Camobeast/vodotopovbrne"},
+        {name: "Plumbing company website", icon: "fa-solid fa-toilet", href: "https://github.com/Camobeast/vodotopovbrne"},
     ];
 
     let benefits = [
-        {name: "a self taught developer", description: "My interest in web development started already in elementary school, since then I have been, slowly and with many breaks, learning HTML and CSS. Last year I also started learning JavaScript, now I am learning Svelte and React, along with TailwindCSS."},
-        {name: "a product design and UX fan", description: "I enjoy keeping up with the latest UI and UX trends and implementing them into my projects in my own way. I often challenge myself to create an original modern design from scratch."},
-        {name: "an excelent communicator", description: "In my work history, a lot of jobs required me to communicate clearly and professionaly with a client. I am still polishing this skill, because as an introvert, it doesnt come naturaly to me."},
+        {name: "a self taught developer", description: "My interest in web development already started in elementary school, since then I have been, slowly and with many breaks, learning HTML and CSS. Last year I also started learning JavaScript, now I am learning Svelte and React, along with TailwindCSS."},
+        {name: "a product design and UX fan", description: "I enjoy keeping up with the latest UI and UX trends and implementing them into my projects in my own way. I often challenge myself to create original, modern and responsive designs from scratch."},
+        {name: "an excelent communicator", description: "In my employment history, some jobs required me to communicate clearly and professionaly with a client. I am still polishing this skill, because as an introvert, it doesnt come naturaly to me."},
     ];
 </script>
 
@@ -68,7 +68,7 @@
             </Step>
             <Step step={steps[2]}>
                 <p>
-                    I designed, developed and deployed this <strong class="text-violet-400"> plumbing website</strong> from scratch using HTML, CSS and JS based on the client's requirements.
+                    I designed, developed and deployed this <strong class="text-violet-400"> plumbing company</strong>  website from scratch using HTML, CSS and JS based on the client's requirements.
                 </p>
             </Step>
         </div>
