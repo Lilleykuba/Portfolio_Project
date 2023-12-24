@@ -34,7 +34,7 @@
             </a>
         </div>
         <div class="relative shadow-2xl grid place-items-center">
-            <img src={"./src/images/profile.png"} alt="Profile image" class="object-cover z-[2] max-h-[83vh]" />
+            <img src={"images/profile.png"} alt="Profile image" class="object-cover z-[2] max-h-[83vh]" />
         </div>
     </section>
 
