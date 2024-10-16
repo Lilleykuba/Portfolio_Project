@@ -27,7 +27,7 @@ sm:text-base min-h-screen">
     </button>
   </div>
   <Header y={y} {language} on:toggleLanguage={toggleLanguage} />
-  <slot {language} />
+  <slot />
   <Footer {language} />
 </div>
 
