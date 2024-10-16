@@ -199,9 +199,9 @@
                 </tbody>
             </table>
         </div>
-        <div class="mx-auto -mt-12 italic sm:hidden opacity-50">
+        <!-- <div class="mx-auto -mt-12 italic sm:hidden opacity-50">
             <p>{translations[language].scrollToSee}</p>
-        </div>
+        </div> -->
         <p class="mx-auto">{translations[language].invest}</p>
     </section>
 </main>
