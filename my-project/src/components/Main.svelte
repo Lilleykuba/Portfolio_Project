@@ -6,8 +6,8 @@
     let translations = {
         en: {
             hi: "Hi I'm",
-            frontendDeveloper: "Front-end Developer",
-            favoriteTech: "My favorite technologies include JavaScript (SvelteKit, React), TailwindCss and HTML!",
+            frontendDeveloper: "Full Stack Developer",
+            favoriteTech: "My favorite technologies include JavaScript (React, Node.js), TailwindCss and HTML!",
             getInTouch: "Get in touch →",
             personalProjects: "A few of my personal projects.",
             curiousToSee: "Curious to see my work?",
@@ -24,7 +24,7 @@
             scrollToSee: "Scroll to see more →",
             invest: "So why not invest?",
             benefit1Name: "a self taught developer",
-            benefit1Desc: "My interest in web development already started in elementary school, since then I have been, slowly and with many breaks, learning HTML and CSS. Last year I also started learning JavaScript, now I am learning Svelte and React, along with TailwindCSS.",
+            benefit1Desc: "My interest in web development already started in elementary school, since then I have been, slowly and with many breaks, learning HTML and CSS. 3 years ago I also started learning JavaScript, now I am learning Svelte and React, along with TailwindCSS.",
             benefit2Name: "a product design and UX fan",
             benefit2Desc: "I enjoy keeping up with the latest UI and UX trends and implementing them into my projects in my own way. I often challenge myself to create original, modern and responsive designs from scratch.",
             benefit3Name: "an excellent communicator",
@@ -34,17 +34,17 @@
             stepsName3: "Plumbing company website",
         },
         cs: {
-            hi: "Ahoj, já jsem",
-            frontendDeveloper: "Front-end vývojář",
-            favoriteTech: "Mé oblíbené technologie zahrnují JavaScript (SvelteKit, React), TailwindCss a HTML!",
+            hi: "Ahoj, jsem",
+            frontendDeveloper: "Full Stack vývojář",
+            favoriteTech: "Mé oblíbené technologie jsou JavaScript (React, Node.js), TailwindCss a HTML!",
             getInTouch: "Kontaktujte mě →",
             personalProjects: "Několik mých osobních projektů.",
             curiousToSee: "Chcete vidět mou práci?",
             watchVideo: "Sledujte video",
-            project1Description: "Navrhl, vyvinul a udržuje webovou stránku vinného sklepa k pronájmu s použitím HTML, CSS, JS a PHP s funkčním rezervačním formulářem.",
+            project1Description: "Navrhl, vyvinul jsem a udržuji webovou stránku vinného sklepa k pronájmu s použitím HTML, CSS, JS a PHP s funkčním rezervačním formulářem.",
             project2Description: "Navrhl a vyvinul jsem webovou aplikaci na sledování výdajů pomocí Reactu, MongoDB a Express.js s funkční databází uživatelů a výdajů.",
-            project3Description: "Navrhl, vyvinul a nasadil jsem tuto webovou stránku instalatérské společnosti od základu pomocí HTML, CSS a JS dle požadavků klienta.",
-            wantToKnowMore: "Chcete vědět víc?",
+            project3Description: "Navrhl, vyvinul jsem a udržuji tuto webovou stránku instalatérské společnosti pomocí HTML, CSS a JS dle požadavků klienta.",
+            wantToKnowMore: "Chcete vědět více?",
             aboutMe: "Něco málo o mně.",
             iAm: "Jsem . . .",
             theCompletePackage: "Kompletní balíček",
@@ -52,10 +52,10 @@
             me: "Já",
             scrollToSee: "Posunutím zobrazíte víc →",
             invest: "Tak proč neinvestovat?",
-            benefit1Name: "samouk vývojář",
-            benefit1Desc: "Můj zájem o webový vývoj začal už na základní škole, od té doby jsem se pomalu, s mnoha přestávkami, učil HTML a CSS. Minulý rok jsem také začal učit JavaScript, nyní se učím Svelte a React spolu s TailwindCSS.",
-            benefit2Name: "fanoušek produktového designu a UX",
-            benefit2Desc: "Rád sleduji nejnovější trendy v UI a UX a implementuji je do svých projektů svým vlastním způsobem. Často se výzvou vytvářím originální, moderní a responzivní designy od základu.",
+            benefit1Name: "jsem samouk vývojář",
+            benefit1Desc: "Můj zájem o webový vývoj začal už na základní škole, od té doby jsem se pomalu, s mnoha přestávkami, učil HTML a CSS. Před 3 roky jsem se také začal učit JavaScript, nyní se učím Svelte a React spolu s TailwindCSS.",
+            benefit2Name: "jsem fanoušek produktového designu a UX",
+            benefit2Desc: "Rád sleduji nejnovější trendy v UI a UX a implementuji je do svých projektů svým vlastním způsobem. Často vytvářím originální, moderní a responzivní designy od základu.",
             benefit3Name: "výborný komunikátor",
             benefit3Desc: "V mé pracovní historii některé pozice vyžadovaly, abych komunikoval jasně a profesionálně s klientem. Stále tuto dovednost zdokonaluji, protože jako introvert pro mě není přirozená.",
             stepsName1: "Vinný sklep k pronájmu",
@@ -167,7 +167,7 @@
             <table class="bg-white text-slate-700 rounded text-center">
                 <thead class="border-b border-solid border-slate-200">
                     <tr class="">
-                        <th class="whitespace-nowrap bg-violet-700 text-white p-4 px-8">{translations[language].techStack}</th>/
+                        <th class="whitespace-nowrap bg-violet-700 text-white p-4 px-8">{translations[language].techStack}</th>
                         <th class="whitespace-nowrap bg-violet-700 text-white p-4 px-8">{translations[language].me}</th>
                     </tr>
                 </thead>
