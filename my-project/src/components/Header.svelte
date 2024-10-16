@@ -1,11 +1,23 @@
+// Header.svelte
 <script>
+    export let language = "en";
     export let y;
 
+    let translations = {
+        en: {
+            projects: "Projects",
+            about: "About me",
+        },
+        cs: {
+            projects: "Projekty",
+            about: "O mě",
+        },
+    };
+
     let tabs = [
-        {name: "Projects", link: "#projects"},
-        {name: "About me", link: "#about"},
-        // {name: "Blog", link: "#blog"},
-    ]
+        {name: translations[language].projects, link: "#projects"},
+        {name: translations[language].about, link: "#about"},
+    ];
 </script>
 
 <header class={"sticky z-[10] top-0 duration-200 px-6 flex items-center justify-between border border-solid " + (
@@ -22,11 +34,7 @@
         {/each}
     </div>
     <a 
-        href="https://www.linkedin.com/in/jakub-lilley/"
-        target="_blank"
-        class="blueShadow relative overflow-hidden px-5 py-2 group rounded-full bg-white text-slate-950"
-    >
-        <div class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200" />
-        <h4 class="relative z-9">Get in touch</h4>
+        href="https://www.linkedin.com/in/jakub-lilley/">
+        LinkedIn
     </a>
 </header>

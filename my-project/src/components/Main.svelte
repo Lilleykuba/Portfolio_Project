@@ -1,16 +1,73 @@
 <script>
-    import Step from "./Step.svelte"
+    import Step from "./Step.svelte";
+
+    export let language = "en";
+
+    let translations = {
+        en: {
+            hi: "Hi I'm",
+            frontendDeveloper: "Front-end Developer",
+            favoriteTech: "My favorite technologies include JavaScript (SvelteKit, React), TailwindCss and HTML!",
+            getInTouch: "Get in touch →",
+            personalProjects: "A few of my personal projects.",
+            curiousToSee: "Curious to see my work?",
+            watchVideo: "Watch the video",
+            project1Description: "I designed, developed and am maintaining a Vine cellar for rent website using HTML, CSS, JS and PHP with a functional reservation form.",
+            project2Description: "I designed and developed an Expense tracker web app using React, MongoDB, and Express.js with a functional database of users and expenses.",
+            project3Description: "I designed, developed, and deployed this plumbing company website from scratch using HTML, CSS, and JS based on the client's requirements.",
+            wantToKnowMore: "Want to know more?",
+            aboutMe: "A bit about me.",
+            iAm: "I am . . .",
+            theCompletePackage: "The Complete Package",
+            techStack: "Tech Stack",
+            me: "Me",
+            scrollToSee: "Scroll to see more →",
+            invest: "So why not invest?",
+            benefit1Name: "a self taught developer",
+            benefit1Desc: "My interest in web development already started in elementary school, since then I have been, slowly and with many breaks, learning HTML and CSS. Last year I also started learning JavaScript, now I am learning Svelte and React, along with TailwindCSS.",
+            benefit2Name: "a product design and UX fan",
+            benefit2Desc: "I enjoy keeping up with the latest UI and UX trends and implementing them into my projects in my own way. I often challenge myself to create original, modern and responsive designs from scratch.",
+            benefit3Name: "an excellent communicator",
+            benefit3Desc: "In my employment history, some jobs required me to communicate clearly and professionally with a client. I am still polishing this skill, because as an introvert, it doesn't come naturally to me.",
+        },
+        cs: {
+            hi: "Ahoj, já jsem",
+            frontendDeveloper: "Front-end vývojář",
+            favoriteTech: "Mé oblíbené technologie zahrnují JavaScript (SvelteKit, React), TailwindCss a HTML!",
+            getInTouch: "Kontaktujte mě →",
+            personalProjects: "Několik mých osobních projektů.",
+            curiousToSee: "Chcete vidět mou práci?",
+            watchVideo: "Sledujte video",
+            project1Description: "Navrhl, vyvinul a udržuje webovou stránku vinného sklepa k pronájmu s použitím HTML, CSS, JS a PHP s funkčním rezervačním formulářem.",
+            project2Description: "Navrhl a vyvinul jsem webovou aplikaci na sledování výdajů pomocí Reactu, MongoDB a Express.js s funkční databází uživatelů a výdajů.",
+            project3Description: "Navrhl, vyvinul a nasadil jsem tuto webovou stránku instalatérské společnosti od základu pomocí HTML, CSS a JS dle požadavků klienta.",
+            wantToKnowMore: "Chcete vědět víc?",
+            aboutMe: "Něco málo o mně.",
+            iAm: "Jsem . . .",
+            theCompletePackage: "Kompletní balíček",
+            techStack: "Technologie",
+            me: "Já",
+            scrollToSee: "Posunutím zobrazíte víc →",
+            invest: "Tak proč neinvestovat?",
+            benefit1Name: "samouk vývojář",
+            benefit1Desc: "Můj zájem o webový vývoj začal už na základní škole, od té doby jsem se pomalu, s mnoha přestávkami, učil HTML a CSS. Minulý rok jsem také začal učit JavaScript, nyní se učím Svelte a React spolu s TailwindCSS.",
+            benefit2Name: "fanoušek produktového designu a UX",
+            benefit2Desc: "Rád sleduji nejnovější trendy v UI a UX a implementuji je do svých projektů svým vlastním způsobem. Často se výzvou vytvářím originální, moderní a responzivní designy od základu.",
+            benefit3Name: "výborný komunikátor",
+            benefit3Desc: "V mé pracovní historii některé pozice vyžadovaly, abych komunikoval jasně a profesionálně s klientem. Stále tuto dovednost zdokonaluji, protože jako introvert pro mě není přirozená.",
+        },
+    };
 
     let steps = [
-        {name: "Project 1", icon: "fa-solid fa-cart-shopping", href: "#"},
-        {name: "Project 2", icon: "fa-solid fa-list-check", href: "#"},
-        {name: "Plumbing company website", icon: "fa-solid fa-toilet", href: "https://github.com/Camobeast/vodotopovbrne"},
+        {name: "Vine cellar to rent website", icon: "fa-solid fa-cart-shopping", href: "https://github.com/Lilleykuba/sklep-purynky"},
+        {name: "Expense tracker web app", icon: "fa-solid fa-list-check", href: "https://github.com/Lilleykuba/expense-tracker"},
+        {name: "Plumbing company website", icon: "fa-solid fa-toilet", href: "https://github.com/Lilleykuba/vodotopovbrne"},
     ];
 
     let benefits = [
-        {name: "a self taught developer", description: "My interest in web development already started in elementary school, since then I have been, slowly and with many breaks, learning HTML and CSS. Last year I also started learning JavaScript, now I am learning Svelte and React, along with TailwindCSS."},
-        {name: "a product design and UX fan", description: "I enjoy keeping up with the latest UI and UX trends and implementing them into my projects in my own way. I often challenge myself to create original, modern and responsive designs from scratch."},
-        {name: "an excelent communicator", description: "In my employment history, some jobs required me to communicate clearly and professionaly with a client. I am still polishing this skill, because as an introvert, it doesnt come naturaly to me."},
+        {name: translations[language].benefit1Name, description: translations[language].benefit1Desc},
+        {name: translations[language].benefit2Name, description: translations[language].benefit2Desc},
+        {name: translations[language].benefit3Name, description: translations[language].benefit3Desc},
     ];
 </script>
 
@@ -18,11 +75,10 @@
     <section id="introPage" class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14">
         <div class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
             <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
-                Hi I'm <span class="poppins text-violet-400">Jakub</span> Lilley <br />Front-end 
-                <span class="poppins text-violet-400">Developer</span>
+                {translations[language].hi} <span class="poppins text-violet-400">Jakub</span> Lilley <br />{translations[language].frontendDeveloper}
             </h2>
             <p class="text-base sm:text-lg md:text-xl">
-                My <span class="text-violet-400">favorite technologies</span> include JavaScript (SvelteKit, React), TailwindCss and HTML!
+                {translations[language].favoriteTech}
             </p>
             <a 
                 class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer"
@@ -30,7 +86,7 @@
                 target="_blank"
             >
                 <div class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200" />
-                <h4 class="relative z-9">Get in touch &rarr;</h4>
+                <h4 class="relative z-9">{translations[language].getInTouch}</h4>
             </a>
         </div>
         <div class="relative shadow-2xl grid place-items-center">
@@ -41,10 +97,10 @@
     <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
         <div class="flex flex-col gap-2 text-center">
             <h6 class="text-lg sm:text-xl md:text-2xl">
-                A few of my personal projects.
+                {translations[language].personalProjects}
             </h6>
             <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-                Curious to <span class="poppins text-violet-400">see</span> my work?
+                {translations[language].curiousToSee}
             </h3>
         </div>
         <a
@@ -53,22 +109,22 @@
             class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-violet-700 duration-200"
         >
             <i class="fa-regular fa-circle-play"></i>
-            <p>Watch the video</p>
+            <p>{translations[language].watchVideo}</p>
         </a>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
             <Step step={steps[0]}>
                 <p>
-                    Project 1 text <strong class="text-violet-400">More text</strong> and end of text.
+                    {translations[language].project1Description}
                 </p>
             </Step>
             <Step step={steps[1]}>
                 <p>
-                    Project 2 text <strong class="text-violet-400">More text</strong> and end of text.
+                    {translations[language].project2Description}
                 </p>
             </Step>
             <Step step={steps[2]}>
                 <p>
-                    I designed, developed and deployed this <strong class="text-violet-400"> plumbing company</strong>  website from scratch using HTML, CSS and JS based on the client's requirements.
+                    {translations[language].project3Description}
                 </p>
             </Step>
         </div>
@@ -78,13 +134,13 @@
             <div class="flex flex-col gap-2 text-center realtive
                         before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-violet-700
                         after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-violet-700  py-4">
-                <h6 class="text-lg sm:text-xl md:text-2xl">Want to know more?</h6>
+                <h6 class="text-lg sm:text-xl md:text-2xl">{translations[language].wantToKnowMore}</h6>
                 <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-                    A bit <span class="poppins text-violet-400">about</span> me.
+                    {translations[language].aboutMe}
                 </h3>
             </div>
         </div>
-        <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">I am . . .</p>
+        <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">{translations[language].iAm}</p>
         <div class="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
             {#each benefits as benefit, index}
             <div class="flex gap-6 sm:gap-8">
@@ -100,53 +156,46 @@
             </div>
             {/each}
         </div>
-        <h5 class="text-2xl sm:text-3xl font-semibold text-center poppins">The <span class="text-violet-400 poppins">Complete</span> Package</h5>
+        <h5 class="text-2xl sm:text-3xl font-semibold text-center poppins">{translations[language].theCompletePackage}</h5>
         <div class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full">
             <table class="bg-white text-slate-700 rounded text-center">
                 <thead class="border-b border-solid border-slate-200">
                     <tr class="">
-                        <th />
-                        <th class="whitespace-nowrap p-2 px-4">Candidate #1</th>
-                        <th class="whitespace-nowrap p-2 px-4">Candidate #2</th>
-                        <th class="whitespace-nowrap p-2 px-4">Candidate #3</th>
-                        <th class="whitespace-nowrap bg-violet-700 text-white p-4 px-8">Me</th>
+                        <th class="whitespace-nowrap bg-violet-700 text-white p-4 px-8">{translations[language].techStack}</th>/
+                        <th class="whitespace-nowrap bg-violet-700 text-white p-4 px-8">{translations[language].me}</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="border-b border-solid border-slate-200">
-                        <td class="border-r border-s border-white pl-4 pr-8 font-semibold text-sm whitespace-nowrap">Dedication</td>
-                        <td><i class="fa-solid fa-check text-slate-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-slate-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-slate-500"></i></td>
+                        <td class="border-r border-s border-white pl-4 pr-8 font-semibold text-sm whitespace-nowrap">HTML</td>
                         <td><i class="fa-solid fa-check text-green-500"></i></td>
                     </tr>
                     <tr class="border-b border-solid border-slate-200">
-                        <td class="border-r border-s border-white pl-4 pr-8 font-semibold text-sm whitespace-nowrap">Critical Thought</td>
-                        <td><i class="fa-solid fa-xmark text-slate-500"></i></td>
-                        <td><i class="fa-solid fa-check text-slate-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-slate-500"></i></td>
+                        <td class="border-r border-s border-white pl-4 pr-8 font-semibold text-sm whitespace-nowrap">CSS</td>
                         <td><i class="fa-solid fa-check text-green-500"></i></td>
                     </tr>
                     <tr class="border-b border-solid border-slate-200">
-                        <td class="border-r border-s border-white pl-4 pr-8 font-semibold text-sm whitespace-nowrap">Interpersonal Skills</td>
-                        <td><i class="fa-solid fa-check text-slate-500"></i></td>
-                        <td><i class="fa-solid fa-xmark text-slate-500"></i></td>
-                        <td><i class="fa-solid fa-check text-slate-500"></i></td>
+                        <td class="border-r border-s border-white pl-4 pr-8 font-semibold text-sm whitespace-nowrap">JavaScript</td>
                         <td><i class="fa-solid fa-check text-green-500"></i></td>
                     </tr>
                     <tr class="border-b border-solid border-slate-200">
-                        <td class="border-r border-s border-white pl-4 pr-8 font-semibold text-sm whitespace-nowrap">Programming Ability</td>
-                        <td><i class="fa-solid fa-xmark text-slate-500"></i></td>
-                        <td><i class="fa-solid fa-check text-slate-500"></i></td>
-                        <td><i class="fa-solid fa-check text-slate-500"></i></td>
+                        <td class="border-r border-s border-white pl-4 pr-8 font-semibold text-sm whitespace-nowrap">Node.js</td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
+                    </tr>
+                    <tr class="border-b border-solid border-slate-200">
+                        <td class="border-r border-s border-white pl-4 pr-8 font-semibold text-sm whitespace-nowrap">React</td>
+                        <td><i class="fa-solid fa-check text-green-500"></i></td>
+                    </tr>
+                    <tr class="border-b border-solid border-slate-200">
+                        <td class="border-r border-s border-white pl-4 pr-8 font-semibold text-sm whitespace-nowrap">SvelteKit</td>
                         <td><i class="fa-solid fa-check text-green-500"></i></td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="mx-auto -mt-12 italic sm:hidden opacity-50">
-            <p>Scroll to see more &rarr;</p>
+            <p>{translations[language].scrollToSee}</p>
         </div>
-        <p class="mx-auto">So why not invest?</p>
+        <p class="mx-auto">{translations[language].invest}</p>
     </section>
 </main>
