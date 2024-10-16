@@ -26,8 +26,8 @@
     <div class="flex flex-col gap-4 items-center justify-center">
         <p><b class="pr-2">{translations[language].email}</b> jakub.lilley@gmail.com</p>
         <p><b class="pr-2">{translations[language].github}</b>
-            <a class="text-violet-400" target="_blank" href="https://github.com/Camobeast">
-                Camobeast<sup><span class="text-xs scale-75 pl-0.5">
+            <a class="text-violet-400" target="_blank" href="https://github.com/lilleykuba">
+                Lilleykuba<sup><span class="text-xs scale-75 pl-0.5">
                     <i class="fa-solid fa-arrow-up-right-from-square text-xs scale-[75%]"></i>
                 </span></sup>
             </a>
