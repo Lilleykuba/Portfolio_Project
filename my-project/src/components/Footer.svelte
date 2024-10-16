@@ -1,6 +1,5 @@
 <!-- Adding Czech language support to each of the Svelte components -->
 
-// Footer.svelte
 <script>
     export let language = "en";
 

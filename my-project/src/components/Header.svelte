@@ -1,4 +1,3 @@
-// Header.svelte
 <script>
     export let language = "en";
     export let y;
@@ -37,4 +36,8 @@
         href="https://www.linkedin.com/in/jakub-lilley/">
         LinkedIn
     </a>
+    <div class="language-switcher">
+        <button on:click={() => language = 'en'}>English</button>
+        <button on:click={() => language = 'cs'}>Česky</button>
+    </div>    
 </header>
