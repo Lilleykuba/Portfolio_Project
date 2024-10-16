@@ -17,7 +17,7 @@
         },
     };
 
-    let tabs = [
+    $: tabs = [
         {name: translations[language].projects, link: "#projects"},
         {name: translations[language].about, link: "#about"},
     ];
