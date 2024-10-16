@@ -2,6 +2,10 @@
     export let language = "en";
     export let y;
 
+    function toggleLanguage() {
+        language = language === 'en' ? 'cs' : 'en';
+    }
+
     let translations = {
         en: {
             projects: "Projects",
@@ -36,8 +40,9 @@
         href="https://www.linkedin.com/in/jakub-lilley/">
         LinkedIn
     </a>
-    <div class="language-switcher">
-        <button on:click={() => language = 'en'}>English</button>
-        <button on:click={() => language = 'cs'}>Česky</button>
-    </div>    
+    <div class="flex items-center gap-4">
+        <button on:click={toggleLanguage} class="bg-violet-400 text-white px-4 py-2 rounded">
+            {language === 'en' ? 'Change Language' : 'Změnit jazyk'}
+        </button>
+    </div>   
 </header>
