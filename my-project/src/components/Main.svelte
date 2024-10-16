@@ -58,13 +58,13 @@
         },
     };
 
-    let steps = [
+    $: steps = [
         {name: "Vine cellar to rent website", icon: "fa-solid fa-cart-shopping", href: "https://github.com/Lilleykuba/sklep-purynky"},
         {name: "Expense tracker web app", icon: "fa-solid fa-list-check", href: "https://github.com/Lilleykuba/expense-tracker"},
         {name: "Plumbing company website", icon: "fa-solid fa-toilet", href: "https://github.com/Lilleykuba/vodotopovbrne"},
     ];
 
-    let benefits = [
+    $: benefits = [
         {name: translations[language].benefit1Name, description: translations[language].benefit1Desc},
         {name: translations[language].benefit2Name, description: translations[language].benefit2Desc},
         {name: translations[language].benefit3Name, description: translations[language].benefit3Desc},
