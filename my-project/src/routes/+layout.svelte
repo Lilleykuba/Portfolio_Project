@@ -6,9 +6,14 @@
   let y;
   let innerHeight = 0;
   let innerWidth = 0;
+  let language = 'en';
 
   function goTop() {
     document.body.scrollIntoView();
+  }
+
+  function toggleLanguage() {
+    language = language === 'en' ? 'cs' : 'en';
   }
 </script>
 
@@ -21,10 +26,9 @@ sm:text-base min-h-screen">
       <i class="fa-solid fa-arrow-up grid place-items-center aspect-square"></i>
     </button>
   </div>
-  <Header y={y}/>
-  <slot />
-  <Footer />
-
+  <Header y={y} {language} on:toggleLanguage={toggleLanguage} />
+  <slot {language} />
+  <Footer {language} />
 </div>
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth></svelte:window>

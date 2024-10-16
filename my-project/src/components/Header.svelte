@@ -1,9 +1,13 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
+
     export let language = "en";
     export let y;
 
+    const dispatch = createEventDispatcher();
+
     function toggleLanguage() {
-        language = language === 'en' ? 'cs' : 'en';
+        dispatch('toggleLanguage');
     }
 
     let translations = {
@@ -42,7 +46,7 @@
     </a>
     <div class="flex items-center gap-4">
         <button on:click={toggleLanguage} class="bg-violet-400 text-white px-4 py-2 rounded">
-            {language === 'en' ? 'Change Language' : 'Změnit jazyk'}
+            {language === 'en' ? 'CZ' : 'EN'}
         </button>
     </div>   
 </header>
