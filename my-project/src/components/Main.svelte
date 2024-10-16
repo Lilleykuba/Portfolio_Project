@@ -65,7 +65,7 @@
     };
 
     $: steps = [
-        {name: translations[language].stepsName1, icon: "fa-regular fa-house", href: "https://sklepzavinohradem.cz"},
+        {name: translations[language].stepsName1, icon: "fa-solid fa-house", href: "https://sklepzavinohradem.cz"},
         {name: translations[language].stepsName2, icon: "fa-solid fa-dollar-sign", href: "https://camo-budget.onrender.com/login"},
         {name: translations[language].stepsName3, icon: "fa-solid fa-toilet", href: "https://www.vodotopovbrne.cz"},
     ];
