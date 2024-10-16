@@ -17,7 +17,7 @@
         },
         cs: {
             projects: "Projekty",
-            about: "O mě",
+            about: "O mně",
         },
     };
 
