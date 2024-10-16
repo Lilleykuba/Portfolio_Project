@@ -29,6 +29,9 @@
             benefit2Desc: "I enjoy keeping up with the latest UI and UX trends and implementing them into my projects in my own way. I often challenge myself to create original, modern and responsive designs from scratch.",
             benefit3Name: "an excellent communicator",
             benefit3Desc: "In my employment history, some jobs required me to communicate clearly and professionally with a client. I am still polishing this skill, because as an introvert, it doesn't come naturally to me.",
+            stepsName1: "Vine cellar for rent website",
+            stepsName2: "Expense tracker web app",
+            stepsName3: "Plumbing company website",
         },
         cs: {
             hi: "Ahoj, já jsem",
@@ -55,13 +58,16 @@
             benefit2Desc: "Rád sleduji nejnovější trendy v UI a UX a implementuji je do svých projektů svým vlastním způsobem. Často se výzvou vytvářím originální, moderní a responzivní designy od základu.",
             benefit3Name: "výborný komunikátor",
             benefit3Desc: "V mé pracovní historii některé pozice vyžadovaly, abych komunikoval jasně a profesionálně s klientem. Stále tuto dovednost zdokonaluji, protože jako introvert pro mě není přirozená.",
+            stepsName1: "Vinný sklep k pronájmu",
+            stepsName2: "Aplikace pro sledování výdajů",
+            stepsName3: "Stránky pro instalatérskou firmu",
         },
     };
 
     $: steps = [
-        {name: "Vine cellar to rent website", icon: "fa-solid fa-cart-shopping", href: "https://github.com/Lilleykuba/sklep-purynky"},
-        {name: "Expense tracker web app", icon: "fa-solid fa-list-check", href: "https://github.com/Lilleykuba/expense-tracker"},
-        {name: "Plumbing company website", icon: "fa-solid fa-toilet", href: "https://github.com/Lilleykuba/vodotopovbrne"},
+        {name: translations[language].stepsName1, icon: "fa-solid fa-cart-shopping", href: "https://sklepzavinohradem.cz"},
+        {name: translations[language].stepsName2, icon: "fa-solid fa-list-check", href: "https://camo-budget.onrender.com/dashboard"},
+        {name: translations[language].stepsName3, icon: "fa-solid fa-toilet", href: "https://www.vodotopovbrne.cz"},
     ];
 
     $: benefits = [
@@ -103,14 +109,14 @@
                 {translations[language].curiousToSee}
             </h3>
         </div>
-        <a
+        <!-- <a
             href="#"
             target="_blank"
             class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-violet-700 duration-200"
         >
             <i class="fa-regular fa-circle-play"></i>
             <p>{translations[language].watchVideo}</p>
-        </a>
+        </a> -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
             <Step step={steps[0]}>
                 <p>
