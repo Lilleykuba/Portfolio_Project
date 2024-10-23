@@ -1,7 +1,7 @@
 <script>
     import Step from "./Step.svelte";
 
-    export let language = "en";
+    export let language = "cz";
 
     let translations = {
         en: {

@@ -1,7 +1,7 @@
 <!-- Adding Czech language support to each of the Svelte components -->
 
 <script>
-    export let language = "en";
+    export let language = "cz";
 
     let translations = {
         en: {

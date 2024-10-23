@@ -1,7 +1,7 @@
 <script>
     import { createEventDispatcher } from 'svelte';
 
-    export let language = "en";
+    export let language = "cz";
     export let y;
 
     const dispatch = createEventDispatcher();
