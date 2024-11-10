@@ -13,7 +13,7 @@
             curiousToSee: "Curious to see my work?",
             watchVideo: "Watch the video",
             project1Description: "I designed, developed and am maintaining a Vine cellar for rent website using HTML, CSS, JS and PHP with a functional reservation form.",
-            project2Description: "I designed and developed an Expense tracker web app using React, MongoDB, and Express.js with a functional database of users and expenses. (To login, use: demo:demo)",
+            project2Description: "This site is meant to showcase your potential new website, including a headless CMS integration.",
             project3Description: "I designed, developed, and deployed this plumbing company website from scratch using HTML, CSS, and JS based on the client's requirements.",
             wantToKnowMore: "Want to know more?",
             aboutMe: "A bit about me.",
@@ -30,8 +30,9 @@
             benefit3Name: "an excellent communicator",
             benefit3Desc: "In my employment history, some jobs required me to communicate clearly and professionally with a client. I am still polishing this skill, because as an introvert, it doesn't come naturally to me.",
             stepsName1: "Vine cellar for rent website",
-            stepsName2: "Expense tracker web app",
+            stepsName2: "Demo coffee shop",
             stepsName3: "Plumbing company website",
+            addContent: "To CMS",
         },
         cs: {
             hi: "Ahoj, jsem",
@@ -42,7 +43,7 @@
             curiousToSee: "Chcete vidět mou práci?",
             watchVideo: "Sledujte video",
             project1Description: "Navrhl, vyvinul jsem a udržuji webovou stránku vinného sklepa k pronájmu s použitím HTML, CSS, JS a PHP s funkčním rezervačním formulářem.",
-            project2Description: "Navrhl a vyvinul jsem webovou aplikaci na sledování výdajů pomocí Reactu, MongoDB a Express.js s funkční databází uživatelů a výdajů. (k přihlášení použíjte: demo:demo)",
+            project2Description: "Tyto webové stránky kavárny ukazují, jak by mohla vypadat vaše nová stránka, včetně systému pro přidávání obsahu.",
             project3Description: "Navrhl, vyvinul jsem a udržuji tuto webovou stránku instalatérské společnosti pomocí HTML, CSS a JS dle požadavků klienta.",
             wantToKnowMore: "Chcete vědět více?",
             aboutMe: "Něco málo o mně.",
@@ -59,14 +60,15 @@
             benefit3Name: "výborný komunikátor",
             benefit3Desc: "V mé pracovní historii některé pozice vyžadovaly, abych komunikoval jasně a profesionálně s klientem. Stále tuto dovednost zdokonaluji, protože jako introvert pro mě není přirozená.",
             stepsName1: "Vinný sklep k pronájmu",
-            stepsName2: "Aplikace pro sledování výdajů",
+            stepsName2: "Demo Kavárna",
             stepsName3: "Stránky pro instalatérskou firmu",
+            addContent: "Zkusit přidat obsah",
         },
     };
 
     $: steps = [
         {name: translations[language].stepsName1, icon: "fa-solid fa-house", href: "https://sklepzavinohradem.cz"},
-        {name: translations[language].stepsName2, icon: "fa-solid fa-dollar-sign", href: "https://camo-budget.onrender.com/login"},
+        {name: translations[language].stepsName2, icon: "fa-solid fa-mug-saucer", href: "https://demo-cafe-lilley.netlify.app"},
         {name: translations[language].stepsName3, icon: "fa-solid fa-toilet", href: "https://www.vodotopovbrne.cz"},
     ];
 
@@ -127,6 +129,7 @@
                 <p>
                     {translations[language].project2Description}
                 </p>
+                <a href="https://demo-cafe-lilley.netlify.app/admin"> {translations[language].addContent}</a>
             </Step>
             <Step step={steps[2]}>
                 <p>
