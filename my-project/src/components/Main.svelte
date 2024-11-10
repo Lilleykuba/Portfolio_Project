@@ -43,7 +43,7 @@
             curiousToSee: "Chcete vidět mou práci?",
             watchVideo: "Sledujte video",
             project1Description: "Navrhl, vyvinul jsem a udržuji webovou stránku vinného sklepa k pronájmu s použitím HTML, CSS, JS a PHP s funkčním rezervačním formulářem.",
-            project2Description: "Tyto webové stránky kavárny ukazují, jak by mohla vypadat vaše nová stránka, včetně systému pro přidávání obsahu.",
+            project2Description: "Podívejte se, jak by mohla vypadat vaše budoucí stránka. Můžete si vyzkoušet i systém pro přidávání obsahu níže.",
             project3Description: "Navrhl, vyvinul jsem a udržuji tuto webovou stránku instalatérské společnosti pomocí HTML, CSS a JS dle požadavků klienta.",
             wantToKnowMore: "Chcete vědět více?",
             aboutMe: "Něco málo o mně.",
@@ -129,7 +129,12 @@
                 <p>
                     {translations[language].project2Description}
                 </p>
-                <a href="https://demo-cafe-lilley.netlify.app/admin"> {translations[language].addContent}</a>
+                <a class="ml-auto cursor-pointer hover:text-slate-950 duration-200 relative after:absolute after:top-0 after:h-0 
+                            after:right-full after:w-full after:h-full after:bg-white after:duration-200 
+                            hover:after:translate-x-full after:z-[-1] overflow-hidden"
+                href="https://demo-cafe-lilley.netlify.app/admin"> 
+                    {translations[language].addContent}
+                </a>
             </Step>
             <Step step={steps[2]}>
                 <p>
