@@ -1,7 +1,7 @@
 <script>
     import Step from "./Step.svelte";
 
-    export let language = "cz";
+    export let language = "cs";
 
     let translations = {
         en: {
@@ -37,7 +37,7 @@
         cs: {
             hi: "Ahoj, jsem",
             frontendDeveloper: "Vývojář webových stránek",
-            favoriteTech: "Weby tvořím za pomoci technologií, jako jsou JavaScript (React), Node.js, TailwindCss a HTML!",
+            favoriteTech: "Weby tvořím za pomoci HTML, CSS, JavaScriptu (React), Node.js, Tailwindu",
             getInTouch: "Kontaktujte mě →",
             personalProjects: "Několik mých projektů.",
             curiousToSee: "Chcete vidět mou práci?",

@@ -7,7 +7,7 @@
   let y;
   let innerHeight = 0;
   let innerWidth = 0;
-  let language = 'en';
+  let language = 'cs';
 
   function goTop() {
     document.body.scrollIntoView();
