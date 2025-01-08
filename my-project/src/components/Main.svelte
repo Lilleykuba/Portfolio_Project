@@ -29,7 +29,7 @@
             benefit2Desc: "I enjoy keeping up with the latest UI and UX trends and implementing them into my projects in my own way. I often challenge myself to create original, modern and responsive designs from scratch.",
             benefit3Name: "an excellent communicator",
             benefit3Desc: "In my employment history, some jobs required me to communicate clearly and professionally with a client. I am still polishing this skill, because as an introvert, it doesn't come naturally to me.",
-            stepsName1: "Vine cellar for rent website",
+            stepsName1: "Web app for sending BTC donations",
             stepsName2: "Demo coffee shop",
             stepsName3: "Plumbing company website",
             addContent: "To CMS",
@@ -59,7 +59,7 @@
             benefit2Desc: "Rád sleduji nejnovější trendy v UI a UX a implementuji je do svých projektů svým vlastním způsobem. Často vytvářím originální, moderní a responzivní designy od základu.",
             benefit3Name: "výborný komunikátor",
             benefit3Desc: "V mé pracovní historii některé pozice vyžadovaly, abych komunikoval jasně a profesionálně s klientem. Stále tuto dovednost zdokonaluji, protože jako introvert pro mě není přirozená.",
-            stepsName1: "Vinný sklep k pronájmu",
+            stepsName1: "Aplikace pro posílání příspěvků v BTC",
             stepsName2: "Demo Kavárna",
             stepsName3: "Stránky pro instalatérskou firmu",
             addContent: "Zkusit přidat obsah",
@@ -131,7 +131,7 @@
                 <a class="ml-auto cursor-pointer hover:text-slate-950 duration-200 relative after:absolute after:top-0 after:h-0 
                             after:right-full after:w-full after:h-full after:bg-white after:duration-200 
                             hover:after:translate-x-full after:z-[-1] overflow-hidden"
-                href="https://demo-cafe-lilley.netlify.app/admin"> 
+                href="https://cafe.lilleyjakub.com/admin"> 
                     {translations[language].addContent}
                 </a>
             </Step>
