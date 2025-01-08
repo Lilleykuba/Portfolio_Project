@@ -12,7 +12,7 @@
             personalProjects: "A few of my personal projects.",
             curiousToSee: "Curious to see my work?",
             watchVideo: "Watch the video",
-            project1Description: "I designed, developed and am maintaining a Vine cellar for rent website using HTML, CSS, JS and PHP with a functional reservation form.",
+            project1Description: "As my personal project I developed this BTC tipping web app featuring analytics and metamask integration, inspired by services like buymeacoffee.com",
             project2Description: "This site is meant to showcase your potential new website, including a headless CMS integration.",
             project3Description: "I designed, developed, and deployed this plumbing company website from scratch using HTML, CSS, and JS based on the client's requirements.",
             wantToKnowMore: "Want to know more?",
@@ -42,7 +42,7 @@
             personalProjects: "Několik mých projektů.",
             curiousToSee: "Chcete vidět mou práci?",
             watchVideo: "Sledujte video",
-            project1Description: "Navrhl, vyvinul jsem a udržuji webovou stránku vinného sklepa k pronájmu s použitím HTML, CSS, JS a PHP s funkčním rezervačním formulářem.",
+            project1Description: "Webová aplikace poskytující možnost posílání dobrovolných příspěvků registrovaným uživatelům v BTC ",
             project2Description: "Podívejte se, jak by mohla vypadat vaše budoucí stránka. Můžete si vyzkoušet i systém pro přidávání obsahu níže.",
             project3Description: "Navrhl, vyvinul jsem a udržuji tuto webovou stránku instalatérské společnosti pomocí HTML, CSS a JS dle požadavků klienta.",
             wantToKnowMore: "Chcete vědět více?",
@@ -67,8 +67,8 @@
     };
 
     $: steps = [
-        {name: translations[language].stepsName1, icon: "fa-solid fa-house", href: "https://sklepzavinohradem.cz"},
-        {name: translations[language].stepsName2, icon: "fa-solid fa-mug-saucer", href: "https://demo-cafe-lilley.netlify.app"},
+        {name: translations[language].stepsName1, icon: "fa-brands fa-btc", href: "http://cryptip.lilleyjakub.com"},
+        {name: translations[language].stepsName2, icon: "fa-solid fa-mug-saucer", href: "http://cafe.lilleyjakub.com"},
         {name: translations[language].stepsName3, icon: "fa-solid fa-toilet", href: "https://www.vodotopovbrne.cz"},
     ];
 
