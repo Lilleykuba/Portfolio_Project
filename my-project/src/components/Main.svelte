@@ -90,8 +90,7 @@
             </p>
             <a 
                 class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer"
-                href="https://www.linkedin.com/in/jakub-lilley/"
-                target="_blank"
+                href="#contactMe"
             >
                 <div class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200" />
                 <h4 class="relative z-9">{translations[language].getInTouch}</h4>
@@ -210,6 +209,6 @@
         <!-- <div class="mx-auto -mt-12 italic sm:hidden opacity-50">
             <p>{translations[language].scrollToSee}</p>
         </div> -->
-        <p class="mx-auto">{translations[language].invest}</p>
+        <p id="contactMe" class="mx-auto">{translations[language].invest}</p>
     </section>
 </main>
