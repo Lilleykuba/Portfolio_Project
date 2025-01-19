@@ -65,8 +65,8 @@
             stepsName2: "Demo Kavárna",
             stepsName3: "Stránky pro instalatérskou firmu",
             addContent: "Zkusit přidat obsah",
-            firstName: "BRNO Web",
-            lastName: "Studio",
+            firstName: "BRNO Web Studio",
+            lastName: "",
         },
     };
 
@@ -85,7 +85,7 @@
 
 <main class="flex flex-col flex-1 p-4">
     <section id="introPage" class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14">
-        <div class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
+        <div class="flex flex-col justify-center text-center gap-6 md:gap-8 lg:gap-10">
             <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
                 {translations[language].hi} <span class="poppins text-violet-400">{translations[language].firstName}</span> {translations[language].lastName} <br />{translations[language].frontendDeveloper}
             </h2>
