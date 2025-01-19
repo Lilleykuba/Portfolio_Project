@@ -33,11 +33,13 @@
             stepsName2: "Demo coffee shop",
             stepsName3: "Plumbing company website",
             addContent: "To CMS",
+            firstName: "Jakub",
+            lastName: "Lilley",
         },
         cs: {
-            hi: "Ahoj, jsem",
-            frontendDeveloper: "Vývojář webových stránek",
-            favoriteTech: "Weby tvořím za pomoci HTML, CSS, JavaScriptu (React), Node.js, Tailwindu",
+            hi: "Vítejte v ",
+            frontendDeveloper: "zaměřuji se na tvorbu webových stránek a aplikací.",
+            favoriteTech: "Weby tvořím za pomoci moderních technologií jako je JavaScript (React, Node.js), TailwindCss a HTML!",
             getInTouch: "Kontaktujte mě →",
             personalProjects: "Několik mých projektů.",
             curiousToSee: "Chcete vidět mou práci?",
@@ -63,6 +65,8 @@
             stepsName2: "Demo Kavárna",
             stepsName3: "Stránky pro instalatérskou firmu",
             addContent: "Zkusit přidat obsah",
+            firstName: "BRNO Web",
+            lastName: "Studio",
         },
     };
 
@@ -83,7 +87,7 @@
     <section id="introPage" class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14">
         <div class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
             <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
-                {translations[language].hi} <span class="poppins text-violet-400">Jakub</span> Lilley <br />{translations[language].frontendDeveloper}
+                {translations[language].hi} <span class="poppins text-violet-400">{translations[language].firstName}</span> {translations[language].lastName} <br />{translations[language].frontendDeveloper}
             </h2>
             <p class="text-base sm:text-lg md:text-xl">
                 {translations[language].favoriteTech}
@@ -96,9 +100,9 @@
                 <h4 class="relative z-9">{translations[language].getInTouch}</h4>
             </a>
         </div>
-        <div class="relative shadow-2xl grid place-items-center">
+        <!-- <div class="relative shadow-2xl grid place-items-center">
             <img src={"images/profile.png"} alt="Profile image" class="object-cover z-[2] max-h-[83vh]" />
-        </div>
+        </div> -->
     </section>
 
     <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
@@ -169,7 +173,7 @@
             </div>
             {/each}
         </div>
-        <h5 class="text-2xl sm:text-3xl font-semibold text-center poppins">{translations[language].theCompletePackage}</h5>
+        <!-- <h5 class="text-2xl sm:text-3xl font-semibold text-center poppins">{translations[language].theCompletePackage}</h5>
         <div class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full">
             <table class="bg-white text-slate-700 rounded text-center">
                 <thead class="border-b border-solid border-slate-200">
@@ -205,7 +209,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
         <!-- <div class="mx-auto -mt-12 italic sm:hidden opacity-50">
             <p>{translations[language].scrollToSee}</p>
         </div> -->
