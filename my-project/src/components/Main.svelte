@@ -40,7 +40,7 @@
             hi: "Vítejte v ",
             frontendDeveloper: "zaměřuji se na tvorbu webových stránek a aplikací.",
             favoriteTech: "Weby tvořím za pomoci moderních technologií jako je JavaScript (React, Node.js), TailwindCss a HTML!",
-            getInTouch: "Kontaktujte mě →",
+            getInTouch: "Kontaktujte mě ↓",
             personalProjects: "Několik mých projektů.",
             curiousToSee: "Chcete vidět mou práci?",
             watchVideo: "Sledujte video",
@@ -93,7 +93,7 @@
                 {translations[language].favoriteTech}
             </p>
             <a 
-                class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer"
+                class="blueShadow mx-auto text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950 cursor-pointer"
                 href="#contactMe"
             >
                 <div class="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200" />
