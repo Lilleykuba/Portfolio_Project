@@ -35,7 +35,7 @@
             addContent: "To CMS",
             firstName: "Jakub",
             lastName: "Lilley",
-            project1: "cryptotip.lilleyjakub.com",
+            project1: "https://cryptotip.lilleyjakub.com",
             icons1: "fa-brands fa-btc",
         },
         cs: {
@@ -69,7 +69,7 @@
             addContent: "Zkusit přidat obsah",
             firstName: "BRNO Web Studio",
             lastName: "",
-            project1: "sklep.lilleyjakub.com",
+            project1: "https://sklep.lilleyjakub.com",
             icons1: "fa-solid fa-house",
         },
     };
