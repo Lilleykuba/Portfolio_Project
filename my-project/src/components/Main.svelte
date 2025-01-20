@@ -6,7 +6,7 @@
     let translations = {
         en: {
             hi: "Hi I'm",
-            frontendDeveloper: "Full Stack Developer",
+            frontendDeveloper: "Full-Stack Developer",
             favoriteTech: "My favorite technologies include JavaScript (React, Node.js), TailwindCss and HTML!",
             getInTouch: "Get in touch →",
             personalProjects: "A few of my personal projects.",
@@ -35,6 +35,8 @@
             addContent: "To CMS",
             firstName: "Jakub",
             lastName: "Lilley",
+            project1: "cryptotip.lilleyjakub.com",
+            icons1: "fa-brands fa-btc",
         },
         cs: {
             hi: "Vítejte v ",
@@ -44,7 +46,7 @@
             personalProjects: "Několik mých projektů.",
             curiousToSee: "Chcete vidět mou práci?",
             watchVideo: "Sledujte video",
-            project1Description: "Webová aplikace poskytující možnost posílání dobrovolných příspěvků registrovaným uživatelům v BTC ",
+            project1Description: "Webové stránky s funkčním rezervačním systémem pro vinný sklep, který je možné pronajmout pro různé akce.",
             project2Description: "Podívejte se, jak by mohla vypadat vaše budoucí stránka. Můžete si vyzkoušet i systém pro přidávání obsahu níže (pro přihlašovací údaje mě prosím kontaktujte emailem).",
             project3Description: "Navrhl, vyvinul jsem a udržuji tuto webovou stránku instalatérské společnosti pomocí HTML, CSS a JS dle požadavků klienta.",
             wantToKnowMore: "Chcete vědět více?",
@@ -61,17 +63,19 @@
             benefit2Desc: "Rád sleduji nejnovější trendy v UI a UX a implementuji je do svých projektů svým vlastním způsobem. Často vytvářím originální, moderní a responzivní designy od základu.",
             benefit3Name: "výborný komunikátor",
             benefit3Desc: "V mé pracovní historii některé pozice vyžadovaly, abych komunikoval jasně a profesionálně s klientem. Stále tuto dovednost zdokonaluji, protože jako introvert pro mě není přirozená.",
-            stepsName1: "Aplikace pro posílání příspěvků v BTC",
+            stepsName1: "Vinný sklep k pronájmu",
             stepsName2: "Demo Kavárna",
             stepsName3: "Stránky pro instalatérskou firmu",
             addContent: "Zkusit přidat obsah",
             firstName: "BRNO Web Studio",
             lastName: "",
+            project1: "sklep.lilleyjakub.com",
+            icons1: "fa-solid fa-house",
         },
     };
 
     $: steps = [
-        {name: translations[language].stepsName1, icon: "fa-brands fa-btc", href: "http://cryptip.lilleyjakub.com"},
+        {name: translations[language].stepsName1, icon: translations[language].icons1, href: translations[language].project1},
         {name: translations[language].stepsName2, icon: "fa-solid fa-mug-saucer", href: "http://cafe.lilleyjakub.com"},
         {name: translations[language].stepsName3, icon: "fa-solid fa-toilet", href: "https://www.vodotopovbrne.cz"},
     ];
