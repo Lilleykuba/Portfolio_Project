@@ -5,7 +5,7 @@
 
     let translations = {
         en: {
-            hi: "Hi I'm",
+            hi: "Hi I'm ",
             frontendDeveloper: "Full-Stack Developer",
             favoriteTech: "My favorite technologies include JavaScript (React, Node.js), TailwindCss and HTML!",
             getInTouch: "Get in touch →",
@@ -13,7 +13,7 @@
             curiousToSee: "Curious to see my work?",
             watchVideo: "Watch the video",
             project1Description: "As my personal project I developed this BTC tipping web app featuring analytics and metamask integration, inspired by services like buymeacoffee.com",
-            project2Description: "This site is meant to showcase your potential new website, including a headless CMS integration (contact me to try it out).",
+            project2Description: "This site is meant to showcase your potential new website.",
             project3Description: "I designed, developed, and deployed this plumbing company website from scratch using HTML, CSS, and JS based on the client's requirements.",
             wantToKnowMore: "Want to know more?",
             aboutMe: "A bit about me.",
@@ -47,7 +47,7 @@
             curiousToSee: "Chcete vidět mou práci?",
             watchVideo: "Sledujte video",
             project1Description: "Webové stránky s funkčním rezervačním systémem pro vinný sklep, který je možné pronajmout pro různé akce.",
-            project2Description: "Podívejte se, jak by mohla vypadat vaše budoucí stránka. Můžete si vyzkoušet i systém pro přidávání obsahu níže (pro přihlašovací údaje mě prosím kontaktujte emailem).",
+            project2Description: "Podívejte se, jak by mohla vypadat vaše budoucí stránka.",
             project3Description: "Navrhl, vyvinul jsem a udržuji tuto webovou stránku instalatérské společnosti pomocí HTML, CSS a JS dle požadavků klienta.",
             wantToKnowMore: "Chcete vědět více?",
             aboutMe: "Něco málo o mně.",
