@@ -36,7 +36,9 @@
             firstName: "Jakub",
             lastName: "Lilley",
             project1: "https://cryptotip.lilleyjakub.com",
+            project3: "https://todo.lilleyjakub.com",
             icons1: "fa-brands fa-btc",
+            icons3: "fa-solid fa-list-ul",
         },
         cs: {
             hi: "Vítejte v ",
@@ -70,14 +72,16 @@
             firstName: "BRNO Web Studio",
             lastName: "",
             project1: "https://sklep.lilleyjakub.com",
+            project3: "https://vodotopovbrne.cz",
             icons1: "fa-solid fa-house",
+            icons3: "fa-solid fa-toilet",
         },
     };
 
     $: steps = [
         {name: translations[language].stepsName1, icon: translations[language].icons1, href: translations[language].project1},
         {name: translations[language].stepsName2, icon: "fa-solid fa-mug-saucer", href: "http://cafe.lilleyjakub.com"},
-        {name: translations[language].stepsName3, icon: "fa-solid fa-toilet", href: "https://www.vodotopovbrne.cz"},
+        {name: translations[language].stepsName3, icon: translations[language].icons3,  translations[language].project3},
     ];
 
     $: benefits = [
@@ -136,12 +140,6 @@
                 <p>
                     {translations[language].project2Description}
                 </p>
-                <a class="ml-auto cursor-pointer hover:text-slate-950 duration-200 relative after:absolute after:top-0 after:h-0 
-                            after:right-full after:w-full after:h-full after:bg-white after:duration-200 
-                            hover:after:translate-x-full after:z-[-1] overflow-hidden"
-                href="https://cafe.lilleyjakub.com/admin"> 
-                    {translations[language].addContent}
-                </a>
             </Step>
             <Step step={steps[2]}>
                 <p>
