@@ -81,7 +81,7 @@
     $: steps = [
         {name: translations[language].stepsName1, icon: translations[language].icons1, href: translations[language].project1},
         {name: translations[language].stepsName2, icon: "fa-solid fa-mug-saucer", href: "http://cafe.lilleyjakub.com"},
-        {name: translations[language].stepsName3, icon: translations[language].icons3,  translations[language].project3},
+        {name: translations[language].stepsName3, icon: translations[language].icons3, href: translations[language].project3},
     ];
 
     $: benefits = [
