@@ -35,7 +35,7 @@
             addContent: "To CMS",
             firstName: "Jakub",
             lastName: "Lilley",
-            project1: "https://cryptotip.lilleyjakub.com",
+            project1: "https://cryptip.lilleyjakub.com",
             project3: "https://todo.lilleyjakub.com",
             icons1: "fa-brands fa-btc",
             icons3: "fa-solid fa-list-ul",
