@@ -50,7 +50,7 @@
     </a>
     <div class="flex items-center gap-4">
         <button on:click={toggleLanguage} class="bg-violet-400 text-white text-xs sm:text-sm px-4 py-2 ml-4 rounded max-w-[100px]">
-            {language === 'en' ? 'CZ - Pro klienty' : 'EN - For hiring managers'}
+            {language === 'en' ? 'CZ - Pro klienty' : 'EN - For recruiters'}
         </button>
     </div>   
 </header>
