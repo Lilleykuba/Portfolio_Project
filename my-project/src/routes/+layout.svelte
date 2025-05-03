@@ -33,3 +33,25 @@ sm:text-base min-h-screen">
 </div>
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth></svelte:window>
+
+{@html `
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "BrnoWebStudio",
+    "url": "https://lilleyjakub.com",
+    "image": "https://lilleyjakub.com/og-cover.jpg",
+    "description": "Tvorba moderních webových stránek a správa webu pro malé firmy v Brně a okolí.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Vaše Ulice 123",
+      "addressLocality": "Brno",
+      "postalCode": "60200",
+      "addressCountry": "CZ"
+    },
+    "telephone": "+420‑000‑000‑000",
+    "areaServed": "Brno"
+  }
+  </script>`}
+  

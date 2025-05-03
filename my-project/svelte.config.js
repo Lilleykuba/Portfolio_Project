@@ -1,7 +1,8 @@
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from "@sveltejs/adapter-netlify";
 
 export default {
   kit: {
-    adapter: adapter()
-  }
+    adapter: adapterNetlify({ split: false }), // static HTML
+    prerender: { default: true },
+  },
 };

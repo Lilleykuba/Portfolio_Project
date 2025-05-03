@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "sveltekit-sitemap": "^1.0.21"
+  }
+}
