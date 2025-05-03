@@ -11,8 +11,3 @@
       Referrer-Policy        = "strict-origin-when-cross-origin"
       Cache-Control          = "public, max-age=31536000, immutable"
 
-[[redirects]]
-  from = "http://lilleyjakub.com/*"
-  to   = "https://lilleyjakub.com/:splat"
-  status = 301
-  force  = true

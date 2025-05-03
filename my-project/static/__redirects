@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "http://lilleyjakub.com/*"
+  to   = "https://lilleyjakub.com/:splat"
+  status = 301
+  force  = true
