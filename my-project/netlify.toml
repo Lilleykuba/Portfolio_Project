@@ -1,4 +1,4 @@
 [build]
   publish = "build"
-  command = "npm run build && npm run postbuild"   # see step 5
+  command = "npm run build"
 
