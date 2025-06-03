@@ -94,9 +94,9 @@
 <main class="flex flex-col flex-1 p-4">
     <section id="introPage" class="grid grid-cols-1 w-full gap-10 py-8 sm:py-14">
         <div class="flex flex-col justify-center text-center gap-6 md:gap-8 lg:gap-10">
-            <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
+            <h1 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
                 {translations[language].hi} <span class="poppins text-violet-400">{translations[language].firstName}</span> {translations[language].lastName} <br />{translations[language].frontendDeveloper}
-            </h2>
+            </h1>
             <p class="text-base sm:text-lg md:text-xl">
                 {translations[language].favoriteTech}
             </p>
@@ -115,12 +115,12 @@
 
     <section id="projects" class="py-20 lg:py-32 flex flex-col gap-24">
         <div class="flex flex-col gap-2 text-center">
-            <h6 class="text-lg sm:text-xl md:text-2xl">
+            <h5 class="text-lg sm:text-xl md:text-2xl">
                 {translations[language].personalProjects}
-            </h6>
-            <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
+            </h5>
+            <h2 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
                 {translations[language].curiousToSee}
-            </h3>
+            </h2>
         </div>
         <!-- <a
             href="#"
@@ -153,7 +153,7 @@
             <div class="flex flex-col gap-2 text-center realtive
                         before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-violet-700
                         after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-violet-700  py-4">
-                <h6 class="text-lg sm:text-xl md:text-2xl">{translations[language].wantToKnowMore}</h6>
+                <h5 class="text-lg sm:text-xl md:text-2xl">{translations[language].wantToKnowMore}</h5>
                 <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
                     {translations[language].aboutMe}
                 </h3>
