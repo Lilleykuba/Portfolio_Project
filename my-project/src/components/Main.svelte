@@ -49,7 +49,7 @@
             curiousToSee: "Chcete vidět mou práci?",
             watchVideo: "Sledujte video",
             project1Description: "Webové stránky s funkčním rezervačním systémem pro vinný sklep, který je možné pronajmout pro různé akce.",
-            project2Description: "Podívejte se, jak by mohla vypadat vaše budoucí stránka.",
+            project2Description: "Podívejte se, jak by mohla vypadat vaše budoucí stránka. Kompletní webová stránka s responzivním designem, která je snadno přizpůsobitelná.",
             project3Description: "Navrhl, vyvinul jsem a udržuji tuto webovou stránku instalatérské společnosti pomocí HTML, CSS a JS dle požadavků klienta.",
             wantToKnowMore: "Chcete vědět více?",
             aboutMe: "Něco málo o mně.",
